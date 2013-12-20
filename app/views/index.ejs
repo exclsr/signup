@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/bootstrap.css' />
+    <link rel='stylesheet' href='/css/style.css' />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  	<div class="container">
+	    <div id="formContainer">
+		    <form role="form" action="yes" method="post">
+		    	<h3 class="heading top-heading">secret project?</h3>
+		    	<input 
+		    		class="input form-control" 
+		    		type="text" name="name"
+		    		placeholder="A name"/>
+
+		    	<input 
+		    		class="input form-control" 
+		    		type="email" name="address"
+		    		placeholder="An email address?"/>
+		
+		    	<div id="doneContainer">
+		    		<button
+		    			class="done btn btn-default input"
+		    			type="submit">Whatever</button>
+
+		    		<button 
+		    			class="btn btn-default input done"
+		    			type="submit">Ok!</button>
+
+		    		<button
+		    			class="done btn btn-default input"
+		    			type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+
+		    		<button
+		    			class="done btn btn-default input"
+		    			type="submit">Three</button>
+			    </div>
+			</form>
+		</div>
+	</div>
+  </body>
+</html>

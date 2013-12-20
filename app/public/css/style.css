@@ -1,0 +1,58 @@
+body {
+	color: #222;
+	background: #333;
+}
+
+#formContainer {
+	margin: auto;
+	width: 360px;
+}
+
+.top-heading {
+	margin-top: 5em;
+}
+
+.heading {
+	color: #777;
+	text-align: center;
+	padding-bottom: 1.4em;
+}
+
+.input {
+	border-radius: 0;
+}
+.form-control {
+	background: #222;
+	border-color: #111;
+	color: #999;
+	margin: 4px;
+}
+
+#doneContainer {
+	margin: auto;
+	text-align: center;
+}
+
+.done, #doneContainer button {
+	margin: 3px;
+	margin-top: 1.7em;
+	background: #111;
+	border-color: black;
+	color: #999;
+}
+.done:hover, #doneContainer button:hover {
+	background-color: #222;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: #666;
+}
+.form-control:-moz-placeholder {
+	color: #666;
+}
+.form-control::-moz-placeholder {
+	color: #666;
+}
+.form-control:-ms-input-placeholder { 
+	color: #666;
+}		

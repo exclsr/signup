@@ -1,0 +1,30 @@
+{
+  "vars": {
+    "@input-border-focus": "#222222"
+  },
+  "css": [
+    "type.less",
+    "grid.less",
+    "tables.less",
+    "forms.less",
+    "buttons.less",
+    "alerts.less",
+    "progress-bars.less",
+    "close.less",
+    "tooltip.less",
+    "popovers.less",
+    "carousel.less",
+    "utilities.less",
+    "responsive-utilities.less",
+    "component-animations.less"
+  ],
+  "js": [
+    "alert.js",
+    "tooltip.js",
+    "popover.js",
+    "affix.js",
+    "collapse.js",
+    "scrollspy.js",
+    "transition.js"
+  ]
+}
