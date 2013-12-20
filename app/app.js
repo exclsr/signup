@@ -8,11 +8,12 @@ var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 var fs = require('fs');
+var config = require('./config.js');
 
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 26822);
+app.set('port', process.env.PORT || config.port || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 // app.use(express.favicon());
@@ -28,7 +29,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-var signupListFilename = 'signup-list.txt';
+var signupListFilename = config.signupListFilename;
 
 app.get('/', routes.index);
 app.get('/yes', routes.ok);
