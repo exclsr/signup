@@ -40,9 +40,9 @@ app.post('/yes', function (req, res) {
 	data.name = fromClient.name;
 	data.address = fromClient.address;
 
-	// do some basic data validation.
+	// do some basic data validation. do 'nothing' if given nothing.
 	if ((data.name === "") && (data.address === "")) {
-		routes.ok(req, res);
+		routes.index(req, res);
 		return;
 	}
 
@@ -54,6 +54,13 @@ app.post('/yes', function (req, res) {
 		else {
 			routes.ok(req, res);		
 		}
+	});
+});
+
+app.get('/count', function (req, res) {
+	fs.realpath('./', function (err, resolvedPath) {
+		console.log(resolvedPath);
+		res.send(200);
 	});
 });
 
