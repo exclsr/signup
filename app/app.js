@@ -40,8 +40,13 @@ app.post('/yes', function (req, res) {
 	data.name = fromClient.name;
 	data.address = fromClient.address;
 
-	var line = JSON.stringify(data) + "\r\n";
+	// do some basic data validation.
+	if ((data.name === "") && (data.address === "")) {
+		routes.ok(req, res);
+		return;
+	}
 
+	var line = JSON.stringify(data) + "\r\n";
 	fs.appendFile(signupListFilename, line, function (err) {
 		if (err) {
 			res.send(500, "THE COMPUTER IS BROKEN.");
