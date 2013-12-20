@@ -3,13 +3,17 @@ body {
 	background: #333;
 }
 
+.debug {
+	border: solid 1px red;
+}
+
 #formContainer {
 	margin: auto;
-	width: 360px;
+	width: 280px;
 }
 
 .top-heading {
-	margin-top: 5em;
+	margin-top: 3em;
 }
 
 .heading {
@@ -25,7 +29,9 @@ body {
 	background: #222;
 	border-color: #111;
 	color: #999;
-	margin: 4px;
+	margin: 0;
+	margin-top: 4px;
+	margin-bottom: 4px;
 }
 
 #doneContainer {
